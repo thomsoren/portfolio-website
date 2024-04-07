@@ -11,7 +11,7 @@ import { useSectionInView } from '@/lib/hooks'
 import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5); 
+  const { ref } = useSectionInView("Hjem", 0.5); 
   const {setActiveSection, setTimeOfLastClick}= useActiveSectionContext();
 
   return (
@@ -58,11 +58,11 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hei, jeg heter Thomas. </span>
-        Jeg er en <span className="font-bold">fullstack-utvikler</span> som
+        Jeg er en <span className="font-bold">student</span> som
         elsker å lage ting. Jeg har jobbet med webutvikling i{" "}
         <span className="font-bold">noen måneder.</span> Jeg liker å lage{" "}
-        <span className="italic"> nettsider og spill. </span> Mitt fokus er{" "}
-        <span className="underline">React (Next.js)</span>
+        <span className="italic"> AI-modeller, nettsider og spill. </span> Mitt fokus er{" "}
+        <span className="underline">maskinlæring</span>
       </motion.h1>
 
       <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium' 
@@ -75,17 +75,17 @@ export default function Intro() {
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
           outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection("Kontakt");
             setTimeOfLastClick(Date.now()); 
           }}
         >
-          {" "}
-          Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/>
+          
+          Kontakt meg her{" "} <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/>
         </Link>
 
-        <a className="group bg-white px-7 py-3 flex imtems-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack" href="/CV.pdf" download>
-          {" "}
-          Download CV <HiDownload 
+        <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack" href="/CV_Thomas_Sorensen.pdf" download>
+          
+          Last ned CV{" "} <HiDownload 
           className='opacity-60 group-hover:translate-y-1 transition'/>{" "}
         </a>
         

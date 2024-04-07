@@ -11,7 +11,7 @@ import toast from 'react-hot-toast'
 
 export default function Contact() {
 
-  const { ref } = useSectionInView("Contact"); 
+  const { ref } = useSectionInView("Kontakt"); 
     const { pending} = useFormStatus();
 
   return (
