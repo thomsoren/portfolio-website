@@ -2,10 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import CogitoXInfor from "../public/cogitoxinfor.png";
-import Firepaaraad from "../public/firepaaraad.png";
-import MMIOving5 from "../public/mmioving5.png";
-
+import CogitoXInfor from "@/public/cogitoxinfor.png";
+import Firepaaraad from "@/public/firepaaraad.png";
+import MMIOving5 from "@/public/mmioving5.png";
 
 export const links = [
   {
