@@ -24,7 +24,6 @@ export default function About() {
 
         <p className='mb-3'>
           Utenfor skolen jobber jeg deltid som <span className='font-bold'>vekter</span>, noe som har styrket mine ferdigheter i <span className='underline'>kommunikasjon og teamarbeid.</span> Jeg er alltid på utkikk etter nye utfordringer og muligheter til å utforske og lære. </p>
-
           <p>Ta gjerne kontakt om du ønsker å diskutere muligheter, ideer, eller bare si hei😁</p>
     </motion.section>
 
